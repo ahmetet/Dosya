@@ -17,7 +17,7 @@ KarakterDizisi Dosya::Oku() {
 	}
 	else {
 	 
-		this->OkunacakDosya.unsetf(std::ios_base::skipws);//alt satýr gör
+		this->OkunacakDosya.unsetf(std::ios_base::skipws);//alt satÄ±r gÃ¶r
 	
 		unsigned char anlikOkunan;
 		int suanki=0;
@@ -31,44 +31,44 @@ KarakterDizisi Dosya::Oku() {
 			
 			suanki = (int)anlikOkunan;
 			if (suanki == 195 || suanki == 196 ||suanki==197||suanki==158||suanki==159|| suanki==135|| suanki == 177 || suanki == 176  || suanki==167||suanki==182  || suanki == 156 || suanki==150 || suanki==188) {
-				//ý,Ý,ö,Ö,ü,Ü,ç,Ç,þ,Þ,ð,Ð
+				//Ä±,Ä°,Ã¶,Ã–,Ã¼,Ãœ,Ã§,Ã‡,ÅŸ,Åž,ÄŸ,Äž
 				
 				
 				if (onceki == 196 && suanki == 177) {
-					this->Okunan = this->Okunan + 'ý';
+					this->Okunan = this->Okunan + 'Ä±';
 				}
 				if (onceki == 196 && suanki == 176) {
-					this->Okunan = this->Okunan + 'Ý';
+					this->Okunan = this->Okunan + 'Ä°';
 				}
 				if (onceki == 195 && suanki == 182) {
-					this->Okunan = this->Okunan + 'ö';
+					this->Okunan = this->Okunan + 'Ã¶';
 				}
 				if (onceki == 195 && suanki == 150) {
-					this->Okunan = this->Okunan + 'Ö';
+					this->Okunan = this->Okunan + 'Ã–';
 				}
 				if (onceki == 195 && suanki == 188) {
-					this->Okunan = this->Okunan + 'ü';
+					this->Okunan = this->Okunan + 'Ã¼';
 				}
 				if (onceki == 195 && suanki == 156) {
-					this->Okunan = this->Okunan + 'Ü';
+					this->Okunan = this->Okunan + 'Ãœ';
 				}
 				if (onceki == 195 && suanki == 167) {
-					this->Okunan = this->Okunan + 'ç';
+					this->Okunan = this->Okunan + 'Ã§';
 				}
 				if (onceki == 195 && suanki == 135) {
-					this->Okunan = this->Okunan + 'Ç';
+					this->Okunan = this->Okunan + 'Ã‡';
 				}
 				if (onceki == 197 && suanki == 159) {
-					this->Okunan = this->Okunan + 'þ';
+					this->Okunan = this->Okunan + 'ÅŸ';
 				}
 				if (onceki == 197 && suanki == 158) {
-					this->Okunan = this->Okunan + 'Þ';
+					this->Okunan = this->Okunan + 'Åž';
 				}
 				if (onceki == 196 && suanki == 159) {
-					this->Okunan = this->Okunan + 'ð';
+					this->Okunan = this->Okunan + 'ÄŸ';
 				}
 				if (onceki == 196 && suanki == 158) {
-					this->Okunan = this->Okunan + 'Ð';
+					this->Okunan = this->Okunan + 'Äž';
 				}
 			}
 			else {
@@ -77,7 +77,7 @@ KarakterDizisi Dosya::Oku() {
 			
 			
 			onceki = suanki;
-			//ý =196 177
+			//Ä± =196 177
 		}
 		 
 	}
