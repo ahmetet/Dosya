@@ -2,12 +2,11 @@
 HasretÇekirdek için türkçe karakter içeren dosya okuma işlemi için eklenti
 
 
-
-private :
+private:
 		KarakterDizisi Okunan;
 		KarakterDizisi DosyaAdi;
 		fstream OkunacakDosya;
-    
-public :
+
+	public:
 		Dosya(KarakterDizisi dosyaAdi);
 		KarakterDizisi Oku();
